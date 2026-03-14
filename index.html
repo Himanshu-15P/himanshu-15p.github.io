@@ -5,38 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Himanshu Parmar | Embedded AI Engineer</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
-header{padding:80px 20px;text-align:center;background:#020617;position:relative}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0 24px;background:#0f172a;color:white}
+header{padding:40px 20px;background:#020617}
+.header-container{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:auto}
+.header-left img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #2563eb}
+.header-center{text-align:center;flex:1}
+.header-right{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
 h1{font-size:42px;margin-bottom:10px}
 .subtitle{color:#94a3b8}
-section{max-width:1000px;margin:auto;padding:60px 20px}
+section{max-width:1000px;margin:auto;padding:35px 20px}
 h2{border-bottom:2px solid #1e293b;padding-bottom:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:30px}
-.card{background:#020617;padding:25px;border-radius:10px;border:1px solid #1e293b}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:20px}
+.card{background:#020617;padding:18px;border-radius:10px;border:1px solid #1e293b}
 .card h3{margin-top:0}
+.project-gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.project-img{width:100%;height:150px;object-fit:cover;border-radius:6px;border:1px solid #1e293b}
 .skills span{display:inline-block;background:#1e293b;padding:8px 12px;border-radius:6px;margin:5px;font-size:14px}
 footer{text-align:center;padding:30px;background:#020617;color:#94a3b8}
 .btn{display:inline-block;padding:12px 20px;background:#2563eb;color:white;text-decoration:none;border-radius:6px}
-.github-btn{position:absolute;top:20px;right:20px}
-.linkedin-btn{position:absolute;top:20px;right:140px;background:#0a66c2}
 .contact p{margin:6px 0}
 </style>
 </head>
 <body>
 
 <header>
-<img src="profile.jpg" alt="Himanshu Parmar" style="width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #2563eb;margin-bottom:20px;">
+<div class="header-container">
+
+<div class="header-left">
+<img src="profile.jpg" alt="Himanshu Parmar">
+</div>
+
+<div class="header-center">
 <h1>Himanshu Parmar</h1>
-<p class="subtitle">Senior Embedded Software Engineer | Edge AI Developer</p>
+<p class="subtitle">Senior Embedded Software Engineer</p>
 <p class="subtitle">Ahmedabad, Gujarat, India</p>
-<a class="btn linkedin-btn" href="https://www.linkedin.com/in/himanshu-parmar-5b1718164" target="_blank">LinkedIN</a>
-<a class="btn github-btn" href="https://github.com" target="_blank">GitHub</a>
+<p class="subtitle">
+<a href="mailto:himanshu.p1512@gmail.com" style="color:#94a3b8;text-decoration:none">✉ himanshu.p1512@gmail.com</a>
+</p>
+<p class="subtitle">
+<a href="tel:+918460566245" style="color:#94a3b8;text-decoration:none">☎ +91 8460566245</a>
+</p>
+</div>
+
+<div class="header-right">
+<a class="btn" href="https://github.com" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/himanshu-parmar-5b1718164" target="_blank" style="background:#0a66c2">LinkedIn</a>
+</div>
+
+</div>
 </header>
 
 <section>
 <h2>About Me</h2>
 <p>
-Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge AI development. Experienced in building intelligent embedded devices integrating computer vision, industrial sensors, and cloud connectivity. Skilled in C/C++ and Python with strong experience in device firmware, hardware interfacing, networking, and cloud communication using MQTT and HTTP/HTTPS.
+Embedded Software Engineer focused on Linux‑based devices, IoT systems, and vision-enabled hardware. Experienced in building complete products including firmware, Linux applications, camera pipelines, sensor integration, networking, and cloud communication using MQTT and HTTP/HTTPS. Strong background in hardware‑software integration and deploying reliable embedded systems.
 </p>
 </section>
 
@@ -55,8 +77,9 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 </div>
 
 <div class="card">
-<h3>Embedded Platforms</h3>
+<h3>Hardware Platforms</h3>
 <div class="skills">
+<span>ARM Cortex</span>
 <span>STM32</span>
 <span>ESP32</span>
 <span>CC2640R2F</span>
@@ -71,7 +94,11 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 <h3>Embedded Linux</h3>
 <div class="skills">
 <span>Embedded Linux</span>
-<span>Multithreading</span>
+<span>Buildroot</span>
+<span>Yocto</span>
+<span>V4L2</span>
+<span>FFmpeg</span>
+<span>POSIX Threads</span>
 </div>
 </div>
 
@@ -80,16 +107,20 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 <div class="skills">
 <span>LVGL</span>
 <span>Qt</span>
+<span>OpenCV</span>
 </div>
 </div>
 
 <div class="card">
-<h3>Communication Protocols</h3>
+<h3>Hardware Interfaces</h3>
 <div class="skills">
 <span>UART</span>
 <span>SPI</span>
 <span>I2C</span>
 <span>Modbus RTU</span>
+<span>MIPI‑CSI</span>
+<span>MIPI‑DSI</span>
+<span>USB</span>
 </div>
 </div>
 
@@ -102,6 +133,7 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 <span>WiFi</span>
 <span>Ethernet</span>
 <span>GSM</span>
+<span>BLE</span>
 <span>RS485</span>
 </div>
 </div>
@@ -110,7 +142,7 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 <h3>Professional Skills</h3>
 <div class="skills">
 <span>Embedded System Design</span>
-<span>Edge AI Development</span>
+<span>Embedded Linux Application Development</span>
 <span>IoT Solution Architecture</span>
 <span>Hardware‑Software Integration</span>
 <span>Industrial Sensor Integration</span>
@@ -121,6 +153,8 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 
 </div>
 </section>
+
+
 
 <section>
 <h2>Professional Experience</h2>
@@ -178,24 +212,59 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 
 <div class="card">
 <h3>Face Recognition Attendance Device</h3>
+<div class="project-gallery">
+<img src="face_device.jpg" class="project-img" alt="Face Recognition Attendance Device">
+<img src="face_device_board.jpg" class="project-img" alt="Face Device Hardware">
+</div>
+<p><strong>Tech:</strong> RV1106, Embedded Linux, V4L2, LVGL, SQLite, MIPI‑CSI</p>
 <p>AI-based attendance system running on RV1106 edge AI processor with real-time face recognition, MIPI camera integration, SQLite database, WiFi/Ethernet connectivity and LVGL GUI.</p>
 </div>
 
 <div class="card">
 <h3>Radiant – Smart Solar Energy Monitoring</h3>
+<div class="project-gallery">
+<img src="solar_monitor.jpg" class="project-img" alt="Solar Monitoring Device">
+<img src="solar_monitor_board.jpg" class="project-img" alt="Solar Device Hardware">
+</div>
+<p><strong>Tech:</strong> ESP32, Modbus RTU, MQTT, HTTPS</p>
 <p>IoT device for monitoring solar inverter and DC meter data using Modbus protocol and transmitting data to cloud via MQTT and HTTPS.</p>
 </div>
 
 <div class="card">
 <h3>AMRIT – Smart Water Management System</h3>
+<div class="project-gallery">
+<img src="water_system.jpg" class="project-img" alt="Water Monitoring System">
+<img src="water_system_sensors.jpg" class="project-img" alt="Water Sensors">
+</div>
+<p><strong>Tech:</strong> Industrial Sensors, RS485, MQTT</p>
 <p>Embedded system for water quality monitoring integrating sensors such as pH, TDS, chlorine, flow and pressure with cloud connectivity.</p>
 </div>
 
 <div class="card">
 <h3>Wireless ECG Patch</h3>
+<div class="project-gallery">
+<img src="ecg_patch.jpg" class="project-img" alt="Wireless ECG Patch">
+<img src="ecg_patch_board.jpg" class="project-img" alt="ECG Hardware">
+</div>
+<p><strong>Tech:</strong> CC2640R2F, BLE, AD8232</p>
 <p>Wireless ECG monitoring system using CC2640R2F BLE microcontroller and AD8232 ECG sensor transmitting data to mobile devices via BLE.</p>
 </div>
 
+</div>
+</section>
+
+<section>
+<h2>Tools & Development Environment</h2>
+<div class="card">
+<div class="skills">
+<span>Git</span>
+<span>Linux</span>
+<span>GCC / Cross Compilation</span>
+<span>Buildroot</span>
+<span>Yocto</span>
+<span>GDB</span>
+<span>OpenCV</span>
+</div>
 </div>
 </section>
 
@@ -207,13 +276,7 @@ Embedded Software Engineer specializing in embedded Linux, IoT systems, and edge
 </div>
 </section>
 
-<section class="contact">
-<h2>Contact</h2>
-<p>Email: himanshu.p1512@gmail.com</p>
-<p>Phone: +91 8460566245</p>
-<p>LinkedIn: https://www.linkedin.com/in/himanshu-parmar-5b1718164</p>
-<p>Location: Ahmedabad, Gujarat, India</p>
-</section>
+
 
 <footer>
 <p>© 2026 Himanshu Parmar</p>
